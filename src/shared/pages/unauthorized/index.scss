@@ -1,0 +1,42 @@
+@use '../../../assets/styles/color.scss' as *;
+
+.unauthorized-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.unauthorized-content {
+  background: var(--gray-color);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.unauthorized-title {
+  font-size: 72px;
+  margin: 0;
+}
+
+.unauthorized-message {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.unauthorized-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--white-color);
+  background: var(--black-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.unauthorized-link:hover {
+  background: var(--primary-orange);
+}

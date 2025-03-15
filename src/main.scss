@@ -1,0 +1,34 @@
+@use './assets/styles/color.scss' as *;
+
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($color: var(--black-color), $alpha: 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.text-field {
+  .MuiInputBase-root {
+    background-color: var(--white-color);
+    border-radius: 10px;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+  &.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--white-color);
+  }
+  &.Mui-error .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--white-color);
+  }
+}

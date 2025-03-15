@@ -1,0 +1,60 @@
+@use '../../../../assets/styles/color.scss' as *;
+@use '../../../../assets/styles/mixin.scss' as *;
+
+.register-container {
+  min-height: 100vh;
+  // background-image: url('/src/assets/images/login-img.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-side-container-sign-up {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+
+  @include mobile {
+    text-align: center !important;
+  }
+
+  @include tablet {
+    text-align: center !important;
+  }
+
+  @include monitor {
+  }
+
+  @include large {
+  }
+}
+
+.right-side-container-sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+.sign-up-wrapper {
+  width: 23rem;
+
+  @include mobile {
+    width: 17rem !important;
+  }
+}
+
+.link-navigation {
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 15px !important;
+}
+
+.sign-up-btn {
+  background-color: var(--black-color) !important;
+  border-radius: 10px !important;
+  font-weight: bold !important;
+  height: 2.5rem;
+}

@@ -1,0 +1,126 @@
+@use '../../../../assets/styles/color.scss' as *;
+@use '../../../../assets/styles/mixin.scss' as *;
+
+.main-content-user-form {
+  background: var(--primary-color);
+  padding: 1rem;
+  position: relative;
+}
+
+.previous-page-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: 11rem;
+}
+
+.user-form-arrow-back-icon {
+  font-size: 17px !important;
+  font-weight: bold !important;
+}
+
+.user-form-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba($color: var(--black-color), $alpha: 0.2);
+}
+
+.primary-details-form {
+  display: flex;
+  align-items: center;
+
+  .image-content {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+
+  .form-filed {
+    display: flex;
+    padding: 0px 1rem;
+    gap: 1rem;
+
+    @include mobile {
+      flex-direction: column !important;
+    }
+  }
+
+  .form-filed-drop-down {
+    padding: 0px 1rem;
+  }
+
+  .user-image {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+
+  .image-upload-btn {
+    background-color: var(--white-color) !important;
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-radius: 20px;
+    width: 10rem;
+    height: 3rem;
+  }
+}
+
+.sub-header-user-form {
+  font-weight: bold;
+}
+
+.security-pin-number-form {
+  display: flex;
+
+  .generate-pin-btn {
+    color: var(--white-color) !important;
+    background-color: var(--black-color) !important;
+    border-radius: 20px;
+    padding: 8px 24px;
+  }
+
+  .copy-pin-btn {
+    color: var(--black-color) !important;
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--black-color);
+    border-radius: 20px;
+    padding: 8px 24px;
+  }
+}
+
+.user-form-last-content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+
+  @include mobile {
+    justify-content: center !important;
+  }
+
+  .user-form-cancel-btn {
+    color: var(--black-color) !important;
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--black-color);
+    border-radius: 15px;
+    width: 9rem;
+    padding: 8px 0px;
+  }
+
+  .user-form-submit-btn {
+    color: var(--white-color) !important;
+    background-color: var(--black-color) !important;
+    border: 1px solid var(--black-color);
+    border-radius: 15px;
+    width: 9rem;
+    padding: 8px 0px;
+  }
+}

@@ -1,0 +1,147 @@
+@use '../../../../assets/styles/color.scss' as *;
+@use '../../../../assets/styles/mixin.scss' as *;
+
+.main-content-users-view {
+  background: var(--primary-color);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+  top: 95px;
+  background-color: var(--primary-color);
+  padding: 1rem 0.5rem 1rem 1rem;
+
+  @include mobile {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1rem !important;
+  }
+}
+
+.users-view-sub-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include mobile {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
+
+.custom-text-field {
+  background-color: var(--white-color);
+  border-radius: 20px;
+  width: 20rem;
+  margin-right: 1rem;
+
+  @include mobile {
+    margin-right: 0 !important;
+    width: 15rem !important;
+  }
+
+  @include tablet {
+    width: 15rem !important;
+  }
+
+  .MuiOutlinedInput-root {
+    height: 3rem;
+
+    & .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+    }
+
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+    }
+
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+    }
+
+    .MuiInputAdornment-root {
+      height: 30px;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.add-user-btn {
+  background-color: var(--black-color) !important;
+  border-radius: 20px;
+  width: 10rem;
+  height: 3rem;
+
+  @include mobile {
+    width: 15rem !important;
+  }
+}
+
+.users-view-description-text {
+  font-size: 14px;
+  color: var(--gray-color) !important;
+}
+
+.user-card-content {
+  padding: 0.5rem 1rem 1rem 1rem;
+  overflow-y: auto;
+}
+
+.user-card-main-content {
+  position: relative;
+  border-radius: 20px;
+}
+
+.more-options-icon {
+  position: absolute !important;
+  top: 12px;
+  right: 8px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: var(--white-color);
+  height: 14rem;
+}
+
+.user-card-image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.user-card-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--black-color);
+}
+
+.user-card-role {
+  font-size: 14px;
+  color: var(--red-color);
+}
+
+.user-card-email {
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.user-card-phone {
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.permission-field {
+  cursor: pointer;
+}

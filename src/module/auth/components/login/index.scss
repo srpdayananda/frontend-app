@@ -1,0 +1,59 @@
+@use '../../../../assets/styles/color.scss' as *;
+@use '../../../../assets/styles/mixin.scss' as *;
+
+.login-container {
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-side-container-login {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+
+  @include mobile {
+    text-align: center !important;
+  }
+
+  @include tablet {
+    text-align: center !important;
+  }
+
+  @include monitor {
+  }
+
+  @include large {
+  }
+}
+
+.right-side-container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.login-wrapper {
+  width: 23rem;
+
+  @include mobile {
+    width: 17rem !important;
+  }
+}
+
+.link-navigation {
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 15px !important;
+}
+
+.login-btn {
+  background-color: var(--black-color) !important;
+  border-radius: 10px !important;
+  font-weight: bold !important;
+  height: 2.5rem;
+}

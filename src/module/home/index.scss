@@ -1,0 +1,27 @@
+@use '../../assets/styles/color.scss' as *;
+
+.home-container {
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+}
+
+.link-navigation-home {
+    cursor: pointer;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 15px !important;
+}
+
+.login-btn-home {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: var(--red-color) !important;
+    border-radius: 20px !important;
+    color: var(--white-color) !important;
+    font-weight: bold !important;
+}

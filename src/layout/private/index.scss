@@ -1,0 +1,6 @@
+@use '../../assets/styles/color.scss' as *;
+
+.full-layout {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
